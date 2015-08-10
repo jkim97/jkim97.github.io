@@ -1,0 +1,39 @@
+html {
+background-color: #D2B9D3;
+}
+
+header {
+	margin-top: 1em;
+	text-align: center;
+	display: block;
+	position: relative;
+}
+
+
+body {
+	text-align: center;
+	font-family: Verdana;
+}
+
+nav {
+	text-align: center;
+	margin: auto;
+	display: inline-table;
+}
+
+a {
+font-color: #5E5A80;
+text-decoration: none;	
+}
+
+a:visited {
+color: #C12869;
+}
+
+div li a {
+	text-align: center;
+	font-family: Verdana;
+	font-weight: bold;
+	font-size: 15px;
+	font-color: #5E5A80;
+}
