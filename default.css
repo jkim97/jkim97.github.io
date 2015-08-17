@@ -7,19 +7,17 @@ header {
 	text-align: center;
 	display: block;
 	position: relative;
+	float: top;
 }
 
 
 body {
 	text-align: center;
 	font-family: Verdana;
+	padding: 20px 50px 150px;
+  	font-size: 13px;
 }
 
-nav {
-	text-align: center;
-	margin: auto;
-	display: inline-table;
-}
 
 a {
 font-color: #5E5A80;
@@ -36,4 +34,97 @@ div li a {
 	font-weight: bold;
 	font-size: 15px;
 	font-color: #5E5A80;
+}
+
+ul {
+	text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 15px 4px 17px 0;
+	list-style: none;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
+}
+
+ul li {
+	font: bold 12px/18px sans-serif;
+	display: inline-block;
+	margin-right: -4px;
+	position: relative;
+	padding: 15px 20px;
+	background-color: #B8E68A;
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-0-transition: all 0.2s;
+}
+
+ul li:hover {
+	background: #555;
+	color: #B8E68A
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 150px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+
+  -transition: opacity 0.2s;
+}
+ul li ul li { 
+  background: #555; 
+
+  display: block; 
+  color: #B8E68A;
+  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+.column-1 {
+	display: inline-block;
+    float : right;
+}
+
+.column-2 {
+	display: inline-block;
+    float : left;
+}
+
+footer {
+	display: inline-block;
+	position: fixed bottom;
+	float: bottom;
+	margin: 0 0 10px 10px;
+}
+
+
+#github {
+	background: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+	background-repeat : no-repeat;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    padding: 50px;
+    margin: 0 0 10px 10px;
+    float: bottom;
 }
