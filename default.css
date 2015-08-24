@@ -19,51 +19,47 @@ body {
 }
 
 
-a {
-font-color: #5E5A80;
-text-decoration: none;	
-}
-
-a:visited {
-color: #C12869;
-}
-
-div li a {
-	text-align: center;
-	font-family: Lucida;
-	font-weight: bold;
-	font-size: 15px;
-	font-color: #5E5A80;
-}
-
 ul {
-	text-align: left;
-	display: inline;
-	margin: 0;
-	padding: 15px 4px 17px 0;
-	list-style: none;
-	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
-	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0, 15);
+  text-align: left;
+  display: inline;
+  background-color: #CACA94;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 4px 17px 0;
+  list-style: none;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 ul li {
-	font: bold 12px/18px sans-serif;
-	display: inline-block;
-	margin-right: -4px;
-	position: relative;
-	padding: 15px 20px;
-	background-color: #E6E6B8;
-	cursor: pointer;
-	-webkit-transition: all 0.2s;
-	-moz-transition: all 0.2s;
-	-ms-transition: all 0.2s;
-	-0-transition: all 0.2s;
+  font: bold 12px/18px sans-serif;
+  display: inline-block;
+  margin-right: -4px;
+  position: relative;
+  padding: 15px 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 ul li:hover {
-	background: #555;
-	color: #B8E68A
+  background: #555;
+  color: #fff;
+}
+
+ul li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+}
+
+ul li:hover a{
+	color: #FFFFFF;
+	text-decoration: none;
 }
 
 ul li ul {
@@ -82,17 +78,23 @@ ul li ul {
   -moz-transition: opacity 0.2s;
   -ms-transition: opacity 0.2s;
   -o-transition: opacity 0.2s;
-
   -transition: opacity 0.2s;
 }
 ul li ul li { 
   background: #555; 
-
   display: block; 
-  color: #5E5A80
+  color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
-ul li ul li:hover { background: #666; }
+
+ul li ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ul li ul li:hover { 
+	background: #666; }
+
 ul li:hover ul {
   display: block;
   opacity: 1;
@@ -117,8 +119,8 @@ footer {
 }
 
 
-#github {
-	background: url("https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png");
+.github {
+	background: url(#);
 	background-repeat : no-repeat;
     display: block;
     width: 100%;
