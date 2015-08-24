@@ -1,5 +1,5 @@
 html {
-background-color: #D2B9D3;
+background-color: #E6E6B8;
 }
 
 header {
@@ -30,7 +30,7 @@ color: #C12869;
 
 div li a {
 	text-align: center;
-	font-family: Verdana;
+	font-family: Lucida;
 	font-weight: bold;
 	font-size: 15px;
 	font-color: #5E5A80;
@@ -53,7 +53,7 @@ ul li {
 	margin-right: -4px;
 	position: relative;
 	padding: 15px 20px;
-	background-color: #B8E68A;
+	background-color: #E6E6B8;
 	cursor: pointer;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -89,7 +89,7 @@ ul li ul li {
   background: #555; 
 
   display: block; 
-  color: #B8E68A;
+  color: #5E5A80
   text-shadow: 0 -1px 0 #000;
 }
 ul li ul li:hover { background: #666; }
