@@ -1,22 +1,12 @@
 html {
-background-color: #E6E6B8;
+background-color: #FFCCCC;
 height: 100%;
-position: relative;
 margin: 0;
 padding: 0;
 }
 
-header {
-	margin-top: 1em;
-	text-align: center;
-	display: block;
-	position: relative;
-	float: top;
-}
-
-
 body {
-	text-align: center;
+  text-align: center;
 	font-family: Verdana;
 	padding: 0;
   font-size: 13px;
@@ -25,21 +15,25 @@ body {
 }
 
 /*menu*/
-ul {
+
+nav {
+  background-color: #FFF;
+  border-bottom: 1px solid white;
+}
+
+nav ul {
   text-align: left;
   display: inline;
-  background-color: #CACA94;
+  background-color: #FFF;
   text-decoration: none;
   margin: 0;
   padding: 15px 4px 17px 0;
   list-style: none;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
-ul li {
-  font: bold 12px/18px sans-serif;
+nav ul li {
+  font: bold 15px/18px sans-serif;
+  color: #997A7A;
   display: inline-block;
   margin-right: -4px;
   position: relative;
@@ -52,23 +46,23 @@ ul li {
   transition: all 0.2s;
 }
 
-ul li:hover {
+nav ul li:hover {
   background: #555;
   color: #fff;
 }
 
-ul li a {
+nav ul li a {
 	text-decoration: none;
-	color: #000;
+	color: #997A7A;
 	display: block;
 }
 
-ul li:hover a{
+nav ul li:hover a{
 	color: #FFFFFF;
 	text-decoration: none;
 }
 
-ul li ul {
+nav ul li ul {
   padding: 0;
   position: absolute;
   top: 48px;
@@ -86,22 +80,23 @@ ul li ul {
   -o-transition: opacity 0.2s;
   -transition: opacity 0.2s;
 }
-ul li ul li { 
+
+nav ul li ul li { 
   background: #555; 
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
 }
 
-ul li ul li a {
+nav ul li ul li a {
 	color: #fff;
 	text-decoration: none;
 }
 
-ul li ul li:hover { 
+nav ul li ul li:hover { 
 	background: #666; }
 
-ul li:hover ul {
+nav ul li:hover ul {
   display: block;
   opacity: 1;
   visibility: visible;
@@ -109,58 +104,37 @@ ul li:hover ul {
 /*menu end*/
 
 .column-1 {
-	display: inline-block;
-  float : right;
-  margin-right: 5%;
-  width: 50%;
-  height: 100%;
-}
-
+  float: left;
+  display: inline-block;
+  margin-left: 150px;
+  }
+  
 .column-2 {
-	display: inline-block;
-  float : left;
-  margin-left: 5%;
-  width: 50%;
-  height: 100%;
-}
+  float: right;
+  display: inline-block;
+  margin-right: 150px;
+  }
 
-/*footer*/
 footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 60px;
-	/*display: block;*/
-  clear: both;
+  border-top: 1px solid white;
+  border-width: 7px;
+  padding: 5px;
 }
-
 
 #github {
-   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6579.png?raw=true) no-repeat;
-   background-size: 35px 35px;
-   height: 3%;  /*  height of the phone image */
-   width: 3%;   /*  width of the phone image */
-   float: bottom;
-   display: inline-block;
-   margin: .25em;
-}
+  float: bottom;
+  display: inline-block;
+}  
 
 #twitter {
-   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6400.png?raw=true) no-repeat;
-   background-size: 35px 35px;
-   height: 3%;  /*  height of the phone image */
-   width: 3%;   /*  width of the phone image */
-   float: bottom;
-   display: inline-block;
-   margin: .25em;
-}
+  float: bottom;
+  display: inline-block;
+}  
 
 #twitter_art {
-   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6390.png?raw=true) no-repeat;
-   background-size: 35px 35px;
-   height: 3%;  /*  height of the phone image */
-   width: 3%;   /*  width of the phone image */
-   float: bottom;
-   display: inline-block;
-   margin: .25em;
-}
+  float: bottom;
+  display: inline-block;
+}  
