@@ -1,5 +1,9 @@
 html {
 background-color: #E6E6B8;
+height: 100%;
+position: relative;
+margin: 0;
+padding: 0;
 }
 
 header {
@@ -14,11 +18,13 @@ header {
 body {
 	text-align: center;
 	font-family: Verdana;
-	padding: 20px 50px 150px;
-  	font-size: 13px;
+	padding: 0;
+  font-size: 13px;
+  min-height: 100%;
+  margin: 0;
 }
 
-
+/*menu*/
 ul {
   text-align: left;
   display: inline;
@@ -100,33 +106,61 @@ ul li:hover ul {
   opacity: 1;
   visibility: visible;
 }
+/*menu end*/
 
 .column-1 {
 	display: inline-block;
-    float : right;
+  float : right;
+  margin-right: 5%;
+  width: 50%;
+  height: 100%;
 }
 
 .column-2 {
 	display: inline-block;
-    float : left;
+  float : left;
+  margin-left: 5%;
+  width: 50%;
+  height: 100%;
 }
 
+/*footer*/
 footer {
-	display: inline-block;
-	position: fixed bottom;
-	float: bottom;
-	margin: 0 0 10px 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+	/*display: block;*/
+  clear: both;
 }
 
 
-.github {
-	background: url(#);
-	background-repeat : no-repeat;
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-size: 40px 40px;
-    padding: 50px;
-    margin: 0 0 10px 10px;
-    float: bottom;
+#github {
+   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6579.png?raw=true) no-repeat;
+   background-size: 35px 35px;
+   height: 3%;  /*  height of the phone image */
+   width: 3%;   /*  width of the phone image */
+   float: bottom;
+   display: inline-block;
+   margin: .25em;
+}
+
+#twitter {
+   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6400.png?raw=true) no-repeat;
+   background-size: 35px 35px;
+   height: 3%;  /*  height of the phone image */
+   width: 3%;   /*  width of the phone image */
+   float: bottom;
+   display: inline-block;
+   margin: .25em;
+}
+
+#twitter_art {
+   background: url(https://github.com/jkim97/jkim97.github.io/blob/master/Fullmoon/png/g6390.png?raw=true) no-repeat;
+   background-size: 35px 35px;
+   height: 3%;  /*  height of the phone image */
+   width: 3%;   /*  width of the phone image */
+   float: bottom;
+   display: inline-block;
+   margin: .25em;
 }
