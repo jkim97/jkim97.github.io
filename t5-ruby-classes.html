@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+  <title>Your page title here</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jiyoon">
+  <link rel="stylesheet" type="text/css" href="default.css">
+</head>
+
+<main>
+  <h1><font color=#4E387E>Post Title</h1>>
+  <h4>Today's Date</h4>
+
+  <section>
+    <p>
+  class Die
+    def initialize(labels)
+      @labels = labels
+        if labels == []
+        raise ArgumentError.new ("Labele are empty!")
+        end
+    end
+
+    def sides
+      @sides = @labels.length
+    end
+
+    def roll
+      @labels[rand(@sides)]
+    end
+  end
+    
+    This is a simple example of using of ruby Class. I created a class called "Die". At initilize, instance variable is set up for labels. If given array is empty, it would raise an ArgumentError. Then number of the sides is measured , and set up as an instance variable. After that random side would be returned, and corresponding element would show up as an result
+    
+    <!-- writing goes here -->
+    </p> 
+    
+      <!-- copy and paste as many sections as you want to add paragraphs -->
+  </section>
+</main>
