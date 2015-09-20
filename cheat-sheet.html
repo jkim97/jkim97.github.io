@@ -14,56 +14,56 @@
 <div id = "index">
 <ul>index
 <li><a href="#a1">all?</a></li>
-<li>any?</li>
-<li>chunk</li>
-<li>collect</li>
-<li>collect_concat</li>
-<li>count</li>
-<li>cycle</li>
-<li>detect</li>
-<li>drop</li>
-<li>drop_while</li>
-<li>each_cons</li>
-<li>each_entry</li>
-<li>each_slice</li>
-<li>each_with_index</li>
-<li>each_with_object</li>
-<li>entries</li>
-<li>find</li>
-<li>find_all</li>
-<li>find_index</li>
-<li>first</li>
-<li>flat_map</li>
-<li>grep</li>
-<li>group_by</li>
-<li>include?</li>
-<li>inject</li>
-<li>lazy</li>
-<li>map</li>
-<li>max</li>
-<li>max_by</li>
-<li>member?</li>
-<li>min</li>
-<li>min_by</li>
-<li>minmax</li>
-<li>minmax_by</li>
-<li>none?</li>
-<li>one?</li>
-<li>partition</li>
-<li>reduce</li>
-<li>reject</li>
-<li>reverse_each</li>
-<li>select</li>
-<li>slice_after</li>
-<li>slice_before</li>
-<li>slice_when</li>
-<li>sort</li>
-<li>sort_by</li>
-<li>take</li>
-<li>take_while</li>
-<li>to_a</li>
-<li>to_h</li>
-<li>zip</li>
+<li><a href="#a2">any?</a></li>
+<li><a href="#c1">chunk</a></li>
+<li><a href="#c2">collect</a></li>
+<li><a href="#c3">collect_concat</a></li>
+<li><a href="#c4">count</a></li>
+<li><a href="#c5">cycle</a></li>
+<li><a href="#d1">detect</a></li>
+<li><a href="#d2">drop</a></li>
+<li><a href="#d3">drop_while</a></li>
+<li><a href="#e1">each_cons</a></li>
+<li><a href="#e2">each_entry</a></li>
+<li><a href="#e3">each_slice</a></li>
+<li><a href="#e4">each_with_index</a></li>
+<li><a href="#e5">each_with_object</a></li>
+<li><a href="#e6">entries</a></li>
+<li><a href="#f1">find</a></li>
+<li><a href="#f2">find_all</a></li>
+<li><a href="#f3">find_index</a></li>
+<li><a href="#f4">first</a></li>
+<li><a href="#f5">flat_map</a></li>
+<li><a href="#g1">grep</a></li>
+<li><a href="#g2">group_by</a></li>
+<li><a href="#i1">include?</a></li>
+<li><a href="#i2">inject</a></li>
+<li><a href="#l1">lazy</a></li>
+<li><a href="#m1">map</a></li>
+<li><a href="#m2">max</a></li>
+<li><a href="#m3">max_by</a></li>
+<li><a href="#m4">member?</a></li>
+<li><a href="#m5">min</a></li>
+<li><a href="#m6">min_by</a></li>
+<li><a href="#m7">minmax</a></li>
+<li><a href="#m8">minmax_by</a></li>
+<li><a href="#n1">none?</a></li>
+<li><a href="#o1">one?</a></li>
+<li><a href="#p1">partition</a></li>
+<li><a href="#r1">reduce</a></li>
+<li><a href="#r2">reject</a></li>
+<li><a href="#r3">reverse_each</a></li>
+<li><a href="#s1">select</a></li>
+<li><a href="#s2">slice_after</a></li>
+<li><a href="#s3">slice_before</a></li>
+<li><a href="#s4">slice_when</a></li>
+<li><a href="#s5">sort</a></li>
+<li><a href="#s6">sort_by</a></li>
+<li><a href="#t1">take</a></li>
+<li><a href="#t2">take_while</a></li>
+<li><a href="#t3">to_a</a></li>
+<li><a href="#t4">to_h</a></li>
+<li><a href="#z1">zip</a></li>
 </ul>
 </div>
 
@@ -82,14 +82,14 @@
   </li>
 </ul>
 </li>
-<li>any?
+<li><a name="a2">any?</a>
 <ul>
   <li>any? [{ |obj| block }] → true or false</li>
   <li>%w[ant bear cat].any? { |word| word.length >= 3 } #=> true</li>
   <li>%w[ant bear cat].any? { |word| word.length >= 4 } #=> true</li>
 </ul>
 </li>
-<li>chunk
+<li><a name="c1">chunk</a>
 <ul>
   <li>chunk { |elt| ... } → an_enumerator</li>
   <li>chunk(initial_state) { |elt, state| ... } → an_enumerator (deprecated) </li>
@@ -101,20 +101,20 @@
   <li>:_alone can be used to force items into their own chunk. For example, you can put lines that contain a URL by themselves, and chunk the rest of the lines together, like this:</li>
 </ul>
 </li>
-<li>collect
+<li><a name="c2">collect</a>
 <ul>
   <li>collect { |obj| block } → array </li>
   <li>(1..4).map { |i| i*i }      #=> [1, 4, 9, 16]</li>
   <li>(1..4).collect { "cat"  }   #=> ["cat", "cat", "cat", "cat"]</li>
 </ul>
 </li>
-<li>collect_concat
+<li><a name="c3">collect_concat</a>
 <ul>
   <li>[[1, 2], [3, 4]].flat_map { |e| e + [100] } #=> [1, 2, 100, 3, 4, 100]</li>
   <li>[1, 2, 3, 4].flat_map { |e| [e, -e] } #=> [1, -1, 2, -2, 3, -3, 4, -4]</li>
 </ul>
 </li>
-<li>count
+<li><a name="c4">count</a>
 <ul>
   <li>count → int click to toggle source </li>
   <li>count(item) → int </li>
@@ -125,7 +125,7 @@
   <li>ary.count{ |x| x%2==0 } #=> 3</li>
 </ul>
 </li>
-<li>cycle
+<li><a name="a5">cycle</a>
 <ul>
   <li>cycle(n=nil) { |obj| block } → nil </li>
   <li>a = ["a", "b", "c"]</li>
@@ -133,28 +133,28 @@
   <li>a.cycle(2) { |x| puts x }  # print, a, b, c, a, b, c.1111</li>
 </ul>
 </li>
-<li>detect
+<li><a name="d1">detect</a>
 <ul>
   <li>detect(ifnone = nil) { |obj| block } → obj or nil click </li>
   <li>(1..10).detect   { |i| i % 5 == 0 and i % 7 == 0 }   #=> nil</li>
   <li>(1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35</li>
 </ul>
 </li>
-<li>drop
+<li><a name="d2">drop</a>
 <ul>
   <li>drop(n) → array </li>
   <li>a = [1, 2, 3, 4, 5, 0]</li>
   <li>a.drop(3) #=> [4, 5, 0]</li>
 </ul>
 </li>
-<li>drop_while
+<li><a name="d3">drop_while</a>
 <ul>
   <li>drop_while { |arr| block } → array </li>
   <li>a = [1, 2, 3, 4, 5, 0]</li>
   <li>a.drop_while { |i| i < 3 }   #=> [3, 4, 5, 0]</li>
 </ul>
 </li>
-<li>each_cons(n) { ... } → nil 
+<li><a name="e1">each_cons(n)</a>
 <ul>
   <li>(1..10).each_cons(3) { |a| p a }</li>
   <li># outputs below</li>
@@ -168,13 +168,13 @@
   <li>[8, 9, 10]</li>
 </ul>
 </li>
-<li>each_entry
+<li><a name="e2">each_entry</a>
 <ul>
   <li>each_entry { |obj| block } → enum </li>
   <li>Calls block once for each element in self, passing that element as a parameter, converting multiple values from yield to an array.</li>
 </ul>
 </li>
-<li>each_slice
+<li><a name="e3">each_slice</a>
 <ul>
   <li>each_slice(n) { ... } → nil </li>
   <li>(1..10).each_slice(3) { |a| p a }</li>
@@ -184,231 +184,231 @@
   <li>[10]</li>
 </ul>
 </li>
-<li>each_with_index
+<li><a name="e4">each_with_index</a>
 <ul>
   <li>each_with_index(*args) { |obj, i| block } → enum</li>
   <li>%w(cat dog wombat).each_with_index { |item, index| hash[item] = index}</li>
 </ul>
 </li>
-<li>each_with_object
+<li><a name="e5">each_with_object</a>
 <ul>
   <li>each_with_object(obj) { |(*args), memo_obj| ... } → obj</li>
   <li>evens = (1..10).each_with_object([]) { |i, a| a << i*2 }</li>
   <li>#=> [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]</li>
 </ul>
 </li>
-<li>entries
+<li><a name="36">entries</a>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
 </li>
-<li>find</li>
+<li><a name="f1">find</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>find_all</li>
+<li><a name="f2">find_all</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>find_index</li>
+<li><a name="f3">find_index</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>first</li>
+<li><a name="f4">first</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>flat_map</li>
+<li><a name="f5">flat_map</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>grep</li>
+<li><a name="g1">grep</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>group_by</li>
+<li><a name="g2">group_by</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>include?</li>
+<li><a name="i1">include?</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>inject</li>
+<li><a name="i2">inject</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>lazy</li>
+<li><a name="l1">lazy</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>map</li>
+<li><a name="m1">map</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>max</li>
+<li><a name="m2">max</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>max_by</li>
+<li><a name="m3">max_by</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>member?</li>
+<li><a name="m4">member?</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>min</li>
+<li><a name="m5">min</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>min_by</li>
+<li><a name="m6">min_by</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>minmax</li>
+<li><a name="m7">minmax</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>minmax_by</li>
+<li><a name="m8">minmax_by</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>none?</li>
+<li><a name="n1">none?</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>one?</li>
+<li><a name="o1">one?</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>partition</li>
+<li><a name="p1">partition</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>reduce</li>
+<li><a name="r1">reduce</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>reject</li>
+<li><a name="r2">reject</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>reverse_each</li>
+<li><a name="r3">reverse_each</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>select</li>
+<li><a name="s1">select</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>slice_after</li>
+<li><a name="s2">slice_after</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>slice_before</li>
+<li><a name="s3">slice_before</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>slice_when</li>
+<li><a name="s4">slice_when</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>sort</li>
+<li><a name="s5">sort</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>sort_by</li>
+<li><a name="s6">sort_by</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>take</li>
+<li><a name="t1">take</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>take_while</li>
+<li><a name="t2">take_while</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>to_a</li>
+<li><a name="t3">to_a</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>to_h</li>
+<li><a name="t4">to_h</a></li>
 <ul>
   <li></li>
   <li></li>
   <li></li>
 </ul>
-<li>zip</li>
+<li><a name="z1">zip</a></li>
 <ul>
   <li></li>
   <li></li>
