@@ -8,7 +8,6 @@
 .index ul {
 	list-style-type: none;
 	text-decoration: none;
-	font-size: 13px;
 }
 
 .index ul li a:link {
@@ -28,5 +27,4 @@
 
 .cheatsheet ul {
 	list-style-type: none;
-	font-size: 13px;
 }
