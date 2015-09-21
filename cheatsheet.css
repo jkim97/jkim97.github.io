@@ -1,4 +1,11 @@
 .cheatsheet {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-left: 150px;
+  }
+
+.cheatsheet {
   float: right;
   display: inline-block;
   width: 50%;
