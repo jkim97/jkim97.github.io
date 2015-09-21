@@ -157,12 +157,14 @@ h2 {
 }
 
 /*cheatsheet*/
-#index {
-	float: left;
-	display: inline-block;
-}
+.index {
+  float: left;
+  display: inline-block;
+  margin-left: 150px;
+  }
 
-#cheatsheet {
-	float: right;
-	display: inline-block;
-}
+.cheatsheet {
+  float: right;
+  display: inline-block;
+  margin-right: 150px;
+  }
