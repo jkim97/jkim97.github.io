@@ -155,25 +155,3 @@ h2 {
   padding: 15px 4px 17px 0;
   list-style: none;
 }
-
-/*cheatsheet*/
-.index {
-  float: left;
-  display: inline-block;
-  margin-left: 150px;
-  }
-
-.cheatsheet {
-  float: right;
-  display: inline-block;
-  width: 50%;
-  margin-right: 150px;
-  }
-
-.index ul {
-	list-style-type: none;
-}
-
-.index ul li a {
-	text-decoration: none;
-}
