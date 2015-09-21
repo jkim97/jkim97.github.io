@@ -161,7 +161,6 @@ h2 {
   float: left;
   display: inline-block;
   margin-left: 150px;
-  width: 30%;
   }
 
 .cheatsheet {
@@ -171,6 +170,10 @@ h2 {
   margin-right: 150px;
   }
 
-.index ul {
+.index ul li {
+	text-decoration: none;
+}
+
+.index ul li a {
 	text-decoration: none;
 }
