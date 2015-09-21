@@ -137,6 +137,7 @@ footer {
 #twitter_art {
   float: bottom;
   display: inline-block;
+}
   
 /*footer end */
 h2 {
@@ -153,4 +154,15 @@ h2 {
   margin: 100px;
   padding: 15px 4px 17px 0;
   list-style: none;
+}
+
+/*cheatsheet*/
+#index {
+	float: left;
+	display: inline-block;
+}
+
+#cheatsheet {
+	float: right;
+	display: inline-block;
 }
