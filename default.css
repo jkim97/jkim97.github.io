@@ -166,5 +166,6 @@ h2 {
 .cheatsheet {
   float: right;
   display: inline-block;
+  width: 50%;
   margin-right: 150px;
   }
