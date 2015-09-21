@@ -1,11 +1,11 @@
-.cheatsheet {
+.index {
   float: left;
   display: inline-block;
   width: 50%;
   margin-left: 150px;
   }
 
-.index {
+.cheatsheet {
   float: right;
   display: inline-block;
   width: 50%;
