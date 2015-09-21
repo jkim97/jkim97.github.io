@@ -31,10 +31,6 @@
     color: white;
 }
 
-.index ul li a:active {
-    text-decoration: underline;
-}
-
 .cheatsheet ul {
 	list-style-type: none;
 }
