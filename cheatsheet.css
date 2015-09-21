@@ -18,3 +18,7 @@
 .index ul li a {
 	text-decoration: none;
 }
+
+.cheatsheet ul {
+	list-style-type: none;
+}
