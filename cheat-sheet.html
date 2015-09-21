@@ -199,220 +199,235 @@
 </li>
 <li><a name="36">entries</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>entries(*args) → array</li>
+  <li>Returns an array containing the items in enum.</li>
 </ul>
 </li>
-<li><a name="f1">find</a></li>
+<li><a name="f1">find</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>find(ifnone = nil) { |obj| block } → obj or nil</li>
+  <li>(1..10).detect   { |i| i % 5 == 0 and i % 7 == 0 }   #=> nil</li>
+  <li>(1..100).find    { |i| i % 5 == 0 and i % 7 == 0 }   #=> 35</li>
 </ul>
-<li><a name="f2">find_all</a></li>
+</li>
+<li><a name="f2">find_all</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>find_all { |obj| block } → array </li>
+  <li>(1..10).find_all { |i|  i % 3 == 0 }   #=> [3, 6, 9]</li>
+  <li>[1,2,3,4,5].select { |num|  num.even?  }   #=> [2, 4]</li>
 </ul>
-<li><a name="f3">find_index</a></li>
+</li>
+<li><a name="f3">find_index</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>find_index(value) → int or nil</li>
+  <li>find_index { |obj| block } → int or nil</li>
+  <li>(1..10).find_index  { |i| i % 5 == 0 and i % 7 == 0 }  #=> nil</li>
+  <li>(1..100).find_index { |i| i % 5 == 0 and i % 7 == 0 }  #=> 34</li>
+  <li>(1..100).find_index(50)                                #=> 49</li>
 </ul>
-<li><a name="f4">first</a></li>
+</li>
+<li><a name="f4">first</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>first → obj or nil </li>
+  <li>first(n) → an_array</li>
+  <li>%w[foo bar baz].first     #=> "foo"</li>
+  <li>%w[foo bar baz].first(2)  #=> ["foo", "bar"]</li>
 </ul>
-<li><a name="f5">flat_map</a></li>
+</li>
+<li><a name="f5">flat_map</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>flat_map { |obj| block } → array </li>
+  <li>[1, 2, 3, 4].flat_map { |e| [e, -e] } #=> [1, -1, 2, -2, 3, -3, 4, -4]</li>
+  <li>[[1, 2], [3, 4]].flat_map { |e| e + [100] } #=> [1, 2, 100, 3, 4, 100]</li>
 </ul>
-<li><a name="g1">grep</a></li>
+</li>
+<li><a name="g1">grep</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>grep(pattern) { |obj| block } → array </li>
+  <li>(1..100).grep 38..44   #=> [38, 39, 40, 41, 42, 43, 44]</li>
+  <li>Returns an array of every element in enum for which Pattern === element. If the optional block is supplied, each matching element is passed to it, and the block’s result is stored in the output array.</li>
 </ul>
-<li><a name="g2">group_by</a></li>
+</li>
+<li><a name="g2">group_by</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>group_by { |obj| block } → a_hash </li>
+  <li>(1..6).group_by { |i| i%3 }   #=> {0=>[3, 6], 1=>[1, 4], 2=>[2, 5]}</li>
 </ul>
-<li><a name="i1">include?</a></li>
+</li>
+<li><a name="i1">include?</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>include?(obj) → true or false </li>
+  <li>IO.constants.include? :SEEK_SET          #=> true</li>
+  <li>IO.constants.include? :SEEK_NO_FURTHER   #=> false</li>
 </ul>
-<li><a name="i2">inject</a></li>
+</li>
+<li><a name="i2">inject</a>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>(5..10).reduce(:+)                             #=> 45</li>
+  <li>(5..10).inject { |sum, n| sum + n }            #=> 45</li>
+  <li>(5..10).inject(1) { |product, n| product * n } #=> 151200</li>
 </ul>
+</li>
 <li><a name="l1">lazy</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns a lazy enumerator, whose methods map/collect, flat_map/collect_concat, select/find_all, reject, grep, zip, take, #take_while, drop, and #drop_while enumerate values only on an as-needed basis. However, if a block is given to zip, values are enumerated immediately.</li>
 </ul>
 <li><a name="m1">map</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>map { |obj| block } → array </li>
+  <li>(1..4).map { |i| i*i }      #=> [1, 4, 9, 16]</li>
+  <li>(1..4).collect { "cat"  }   #=> ["cat", "cat", "cat", "cat"]</li>
 </ul>
 <li><a name="m2">max</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.max                                   #=> "horse"</li>
+  <li>a.max { |a, b| a.length <=> b.length }  #=> "albatross"</li>
+  <li>a.max(2)                                  #=> ["horse", "dog"]</li>
+  <li>a.max(2) {|a, b| a.length <=> b.length }  #=> ["albatross", "horse"]</li>
 </ul>
 <li><a name="m3">max_by</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.max_by { |x| x.length }   #=> "albatross"</li>
+  <li>a.max_by(2) {|x| x.length } #=> ["albatross", "horse"]</li>
 </ul>
 <li><a name="m4">member?</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>member?(obj) → true or false </li>
+  <li>Returns true if any member of enum equals obj. Equality is tested using ==.</li>
+  <li>IO.constants.include? :SEEK_SET          #=> true</li>
+  <li>IO.constants.include? :SEEK_NO_FURTHER   #=> false</li>
 </ul>
 <li><a name="m5">min</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.min                                   #=> "albatross"</li>
+  <li>a.min { |a, b| a.length <=> b.length }  #=> "dog"</li>
+  <li>a.min(2)                                  #=> ["albatross", "dog"]</li>
 </ul>
 <li><a name="m6">min_by</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.min_by { |x| x.length }   #=> "dog"</li>
+  <li>p a.min_by(2) {|x| x.length } #=> ["dog", "horse"]</li>
 </ul>
 <li><a name="m7">minmax</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns two elements array which contains the minimum and the maximum value in the enumerable. The first form assumes all objects implement Comparable; the second uses the block to return a <=> b.</li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.minmax                                  #=> ["albatross", "horse"]</li>
+  <li>a.minmax { |a, b| a.length <=> b.length } #=> ["dog", "albatross"]</li>
 </ul>
 <li><a name="m8">minmax_by</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns a two element array containing the objects in enum that correspond to the minimum and maximum values respectively from the given block.</li>
+  <li>a = %w(albatross dog horse)</li>
+  <li>a.minmax_by { |x| x.length }   #=> ["dog", "albatross"]</li>
 </ul>
 <li><a name="n1">none?</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>none? [{ |obj| block }] → true or false </li>
+  <li>Passes each element of the collection to the given block. The method returns true if the block never returns true for all elements. If the block is not given, none? will return true only if none of the collection members is true.</li>
+  <li>%w{ant bear cat}.none? { |word| word.length == 5 } #=> true</li>
 </ul>
 <li><a name="o1">one?</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>one? [{ |obj| block }] → true or false </li>
+  <li>Passes each element of the collection to the given block. The method returns true if the block returns true exactly once. If the block is not given, one? will return true only if exactly one of the collection members is true.</li>
+  <li>%w{ant bear cat}.one? { |word| word.length == 4 }  #=> true</li>
 </ul>
 <li><a name="p1">partition</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>partition { |obj| block } → [ true_array, false_array </li>
+  <li>Returns two arrays, the first containing the elements of enum for which the block evaluates to true, the second containing the rest.</li>
+  <li>(1..6).partition { |v| v.even? }  #=> [[2, 4, 6], [1, 3, 5]]</li>
 </ul>
 <li><a name="r1">reduce</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>(5..10).inject(1) { |product, n| product * n } #=> 151200</li>
+  <li>(5..10).reduce(:+)                             #=> 45</li>
+  <li>(5..10).reduce(1, :*)                          #=> 151200</li>
 </ul>
 <li><a name="r2">reject</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns an array for all elements of enum for which the given block returns false.</li>
+  <li>(1..10).reject { |i|  i % 3 == 0 }   #=> [1, 2, 4, 5, 7, 8, 10]</li>
+  <li>[1, 2, 3, 4, 5].reject { |num| num.even? } #=> [1, 3, 5]</li>
 </ul>
 <li><a name="r3">reverse_each</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>reverse_each(*args) { |item| block } → enum</li>
+  <li>Builds a temporary array and traverses that array in reverse order.</li>
+  <li>(1..3).reverse_each { |v| p v }</li>
 </ul>
 <li><a name="s1">select</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns an array containing all elements of enum for which the given block returns a true value.</li>
+  <li>(1..10).find_all { |i|  i % 3 == 0 }   #=> [3, 6, 9]</li>
+  <li>[1,2,3,4,5].select { |num|  num.even?  }   #=> [2, 4]</li>
 </ul>
 <li><a name="s2">slice_after</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>enum.slice_after(pattern).each { |ary| ... }</li>
+  <li>enum.slice_after { |elt| bool }.each { |ary| ... }</li>
 </ul>
 <li><a name="s3">slice_before</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>enum.slice_before(pattern).each { |ary| ... }</li>
+  <li>enum.slice_before { |elt| bool }.each { |ary| ... }</li>
 </ul>
 <li><a name="s4">slice_when</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
+  <li>Creates an enumerator for each chunked elements. The beginnings of chunks are defined by the block.</li>
+  <li>enum.slice_when { |elt_before, elt_after| bool }.each { |ary| ... }</li>
+  <li>a = [1,2,4,9,10,11,12,15,16,19,20,21]</li>
+  <li>b = a.slice_when {|i, j| i+1 != j }</li>
+  <li>p b.to_a #=> [[1, 2], [4], [9, 10, 11, 12], [15, 16], [19, 20, 21]]</li>
+</ul> 
 <li><a name="s5">sort</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>sort → array, sort{ |a, b| block } → array </li>
+  <li>%w(rhea kea flea).sort          #=> ["flea", "kea", "rhea"]</li>
+  <li>(1..10).sort { |a, b| b <=> a }  #=> [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]</li>
 </ul>
 <li><a name="s6">sort_by</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>sort_by { |obj| block } → array </li>
+  <li>%w{apple pear fig}.sort_by { |word| word.length}</li>
+  <li> #=> ["fig", "pear", "apple"]</li>
 </ul>
 <li><a name="t1">take</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = [1, 2, 3, 4, 5, 0]</li>
+  <li>a.take(3)             #=> [1, 2, 3]</li>
+  <li>a.take(30)            #=> [1, 2, 3, 4, 5, 0]</li>
 </ul>
 <li><a name="t2">take_while</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Passes elements to the block until the block returns nil or false, then stops iterating and returns an array of all prior elements.</li>
+  <li>a = [1, 2, 3, 4, 5, 0]</li>
+  <li>a.take_while { |i| i < 3 }   #=> [1, 2]</li>
 </ul>
 <li><a name="t3">to_a</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns an array containing the items in enum.</li>
+  <li>(1..7).to_a                       #=> [1, 2, 3, 4, 5, 6, 7]</li>
+  <li>{ 'a'=>1, 'b'=>2, 'c'=>3 }.to_a   #=> [["a", 1], ["b", 2], ["c", 3]]</li>
 </ul>
 <li><a name="t4">to_h</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Returns the result of interpreting enum as a list of [key, value] pairs.</li>
+  <li>%i[hello world].each_with_index.to_h</li>
+  <li># => {:hello => 0, :world => 1}</li>
 </ul>
 <li><a name="z1">zip</a></li>
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>a = [ 4, 5, 6 ], b = [ 7, 8, 9 ]</li>
+  <li>a.zip(b)                 #=> [[4, 7], [5, 8], [6, 9]]</li>
+  <li>[1, 2, 3].zip(a, b)      #=> [[1, 4, 7], [2, 5, 8], [3, 6, 9]]</li>
+  <li>[1, 2].zip(a, b)         #=> [[1, 4, 7], [2, 5, 8]]</li>
+  <li>a.zip([1, 2], [8])       #=> [[4, 1, 8], [5, 2, nil], [6, nil, nil]]</li>
 </ul>
 </ul>
 </div>
