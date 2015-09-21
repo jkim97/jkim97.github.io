@@ -18,17 +18,17 @@
 
 .index ul li a:link {
 	text-decoration: none;
-	text: black;	
+	color: black;	
 }
 
 .index ul li a:visited {
     text-decoration: none;
-    text: black;
+    color: black;
 }
 
 .index ul li a:hover {
     background-color: black;
-    text: white;
+    color: white;
 }
 
 .index ul li a:active {
