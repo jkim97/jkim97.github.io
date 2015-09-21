@@ -13,10 +13,12 @@
 
 .index ul {
 	list-style-type: none;
+	text-decoration: none;
 }
 
 .index ul li a:link {
 	text-decoration: none;
+	
 }
 
 .index ul li a:visited {
