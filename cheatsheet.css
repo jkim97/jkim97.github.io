@@ -24,7 +24,8 @@
 }
 
 .index ul li a:hover {
-    text-decoration: underline;
+    background-color: black;
+    text: white;
 }
 
 .index ul li a:active {
