@@ -111,25 +111,27 @@ nav ul li:hover ul {
   }
 
 footer {
+  margin-top:150px;
+  border-top: 1px solid white;
+  border-width: 7px;
+  padding: 5px;
+  z-index:999999;
   text-align: center;
   position: absolute;
   bottom: 0;
   width: 100%;
-
 }
 
 #github {
-  float: bottom;
   display: inline-block;
 }  
 
 #twitter {
-  float: bottom;
   display: inline-block;
 }  
 
 #twitter_art {
-  float: bottom;
+  
   display: inline-block;
 }
   
