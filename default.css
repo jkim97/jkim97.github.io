@@ -107,12 +107,8 @@ nav ul li:hover ul {
   float: left;
   display: inline-block;
   margin-left: 150px;
-  }
-  
-.column-2 {
-  float: right;
-  display: inline-block;
   margin-right: 150px;
+  overflow: scroll;
   }
 
 footer {
