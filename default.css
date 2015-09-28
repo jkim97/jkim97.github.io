@@ -120,18 +120,22 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  background-attachment: scroll;
+  background-position: 0% 0%;
 }
 
 #github {
+  float: bottom;	
   display: inline-block;
 }  
 
 #twitter {
+  float: bottom;
   display: inline-block;
 }  
 
 #twitter_art {
-  
+  float: bottom;
   display: inline-block;
 }
   
